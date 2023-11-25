@@ -41,22 +41,22 @@ const About = () => {
           className="w-[30%] mx-2 rounded-3xl"
         />
       </div>
-      <p className=" py-4 text-center font-normal text-base tracking-wider dark:text-black">
+      <p className="leading-loose py-4 text-center text-base sm:text-xl  dark:text-black">
         {`Welcome! My name is Duygu. I am a former high school math teacher turned
         Front-End Web Developer based in Vancouver, Canada. My journey from
         teaching to technology has been remarkable. With a strong math
         background and a \"never give up\" mindset, I specialize in React,
-        Next.js, and Tailwind CSS to create clean, user-friendly web designs.
+        Next.js, Tailwind CSS and SASS to create clean, user-friendly, responsive web designs.
         I'm passionate about crafting seamless web experiences and eager to
         collaborate on meaningful tech projects.
-        <br />
+      
         During my leisure hours, I relish quality time with my loved ones.
         Whether it's gathering around a deliciously prepared dinner table or
         venturing out to explore the wonders of nature, these moments hold a
         special place in my heart.`}
       </p>
 
-      <div className="text-gray-200 ">
+      <div className="text-gray-200  mb-[5rem]">
         <h3 className=" text-transparent text-center bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-base text-2xl mt-5 py-7">
           Skills
         </h3>
@@ -64,7 +64,7 @@ const About = () => {
           {skillsData.map((item, i) => {
             return (
               <li className="list-none group" key={`${item.skill}-${i}`}>
-                <span className=" flex items-center justify-center text-2xl sm:text-4xl group-hover:scale-125 transition duration-300  dark:text-black">
+                <span className=" flex items-center justify-center text-2xl sm:text-4xl group-hover:scale-125   dark:text-black">
                   {item.icon}
                 </span>
                 <span className=" dark:text-black">{item.skill}</span>

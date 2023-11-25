@@ -26,7 +26,7 @@ export default function Page({ params }) {
 
   const nextProjectLink = nextProject ? `/projects/${nextProject.slug}` : null;
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden bg-[#121212] px-4 text-white  ">
+    <div className="flex min-h-screen flex-col overflow-hidden bg-[#121212] px-4 text-white dark:bg-purple-100 dark:text-gray-900   ">
       <TransitionEffect />
       <SectionHeading>{currentData.title}</SectionHeading>
       <div className=" mb-16">
@@ -37,16 +37,16 @@ export default function Page({ params }) {
           className=" w-full sm:max-w-[50%] mx-auto my-1"
         />
       </div>
-      <div className="container max-w-[60rem] mx-auto text-gray-200">
+      <div className="container max-w-[60rem] mx-auto text-gray-200 dark:text-gray-900 ">
         <Subheading>Project Overview</Subheading>
-        <p className="py-10 px-2 text-sm sm:text-base font-light">
+        <p className="py-10 px-2 text-sm sm:text-xl font-light">
           {currentData.overview}
         </p>
 
         <Subheading>Tool I Used</Subheading>
         <div className="my-4">
           {currentData.tags.map((tag, i) => (
-            <span className="px-2" key={i}>
+            <span className="px-2 text-xl" key={i}>
               {tag}
             </span>
           ))}
@@ -54,7 +54,7 @@ export default function Page({ params }) {
 
         <div className="flex items-center my-16">
           <Button href="https://duygukoksal.com/movie-app/">Live Site</Button>
-          <Button>GitHub</Button>
+          <Button href="https://github.com/duyguca/movie-app/">GitHub</Button>
         </div>
         <MyAccordion currentData={currentData} />
       </div>

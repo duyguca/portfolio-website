@@ -9,14 +9,14 @@ import MyCodeBlock from "@/components/codeBlock";
 
 export default function MyAccordion({ currentData }) {
   return (
-    <div className="mb-20">
+    <div className="mb-20 ">
       <Accordion className="bg-white ">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Planning</Typography>
+          <Typography className="sm:text-xl font-bold">Development</Typography>
         </AccordionSummary>
         <AccordionDetails className="border-b border-pink-500 bg-pink-100">
           <Typography>
@@ -24,12 +24,12 @@ export default function MyAccordion({ currentData }) {
             <div className="flex flex-col sm:flex-row text-sm sm:text-base justify-center items-center gap-5 p-4 ">
               <Image
                 className="w-full"
-                src={currentData.movieHover}
+                src={currentData.accordionImage1}
                 width={200}
                 height={400}
-                alt="movie-search"
+                alt="accordionImage"
               />
-              <p>{currentData.planning}</p>
+              <p className="sm:text-xl">{currentData.development}</p>
             </div>
           </Typography>
         </AccordionDetails>
@@ -40,19 +40,19 @@ export default function MyAccordion({ currentData }) {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Highlights</Typography>
+          <Typography className="sm:text-xl font-bold">Highlights</Typography>
         </AccordionSummary>
         <AccordionDetails className="border-b border-pink-500 bg-pink-100">
           <Typography>
             <div className="flex flex-col sm:flex-row text-sm sm:text-base justify-center items-center gap-5">
               <Image
                 className="w-full"
-                src={currentData.movieSearch}
+                src={currentData.accordionImage2}
                 width={200}
                 height={200}
-                alt="movie-search"
+                alt="accordionImage"
               />
-              <p>{currentData.highlights}</p>
+              <p className="sm:text-xl">{currentData.highlights}</p>
             </div>
           </Typography>
         </AccordionDetails>
@@ -63,7 +63,9 @@ export default function MyAccordion({ currentData }) {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className="bg-white">What i learned</Typography>
+          <Typography className="bg-white sm:text-xl font-bold">
+            What i learned
+          </Typography>
         </AccordionSummary>
         <AccordionDetails className="border-b border-pink-500 bg-pink-100">
           <Typography>
@@ -73,7 +75,7 @@ export default function MyAccordion({ currentData }) {
                 language="jsx"
                 showLineNumbers={true}
               />
-              <p className="p-4">{currentData.whatILearned}</p>
+              <p className="p-4 sm:text-xl">{currentData.whatILearned}</p>
             </div>
           </Typography>
         </AccordionDetails>

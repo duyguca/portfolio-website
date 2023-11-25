@@ -13,7 +13,7 @@ export default function Projects() {
   const handleTabChange = (id) => {
     setActiveTab(id);
   };
-  console.log({ activeTab });
+  console.log({ projectsData });
 
   return (
     <section
@@ -24,6 +24,7 @@ export default function Projects() {
 
       <div className="flex flex-row justify-center gap-3 text-md sm:text-2xl mb-4 sm:mb-[2rem] ">
         <TabButton
+          utton
           selectTab={() => handleTabChange("all")}
           active={activeTab === "all"}
         >

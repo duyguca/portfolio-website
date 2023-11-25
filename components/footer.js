@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex gap-5 justify-start items-center ">
           <Link
             className="hover:scale-110 hover:text-purple-400 transition "
-            href="https://www.linkedin.com/in/duygu-koksal-7876a7241/"
+            href="https://www.linkedin.com/in/duygukoksalca/"
           >
             <PiLinkedinLogoLight className="text-3xl" />
           </Link>
@@ -23,7 +23,7 @@ const Footer = () => {
           </Link>
           <Link
             className="hover:scale-110 hover:text-purple-400 transition"
-            href="https://github.com/duyguca/"
+            href="mailto:duygukoksalca@gmail.com"
           >
             <AiOutlineMail className="text-3xl"></AiOutlineMail>
           </Link>

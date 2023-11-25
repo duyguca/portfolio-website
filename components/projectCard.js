@@ -12,6 +12,7 @@ export default function Project({
   slug,
   liveSite,
 }) {
+  console.log({ title, description, tags, imageUrl, slug, liveSite });
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -22,7 +23,7 @@ export default function Project({
   console.log({ title, description, tags, imageUrl, slug, liveSite });
   return (
     <motion.div
-      className="mb-5 p-1 sm:p-3 sm:mb-12 bg-white flex flex-col sm:flex-row  justify-between items-center rounded-3xl group-hover:scale-110 max-w-[50rem] mx-auto "
+      className="mb-5 p-1 sm:p-3 sm:mb-12 bg-white flex flex-col sm:flex-row  justify-between items-center rounded-3xl group-hover:scale-110 max-w-[50rem] mx-auto"
       ref={ref}
       style={{
         scale: scaleProgress,
@@ -51,9 +52,11 @@ export default function Project({
           ))}
         </ul>
         <ul className=" cursor-pointer flex flex-col sm:flex-row items-start justify-start sm:items-end gap-5 pt-8 text-gray-700">
-          <li className="border-b-2 border-purple-400 hover:border-pink-600 hover:text-black hover:scale-105 hover:font-base hover:transition-all">
-            <Link href={liveSite}>Live Site</Link>
-          </li>
+          {liveSite && (
+            <li className="border-b-2 border-purple-400 hover:border-pink-600 hover:text-black hover:scale-105 hover:font-base hover:transition-all">
+              <Link href={liveSite}>Live Site</Link>
+            </li>
+          )}
           <li className="border-b-2 border-purple-400 hover:border-pink-600 hover:text-black hover:scale-105 hover:font-base hover:transition-all">
             <Link href={`https://github.com/duyguca/${slug}`}>GitHub</Link>
           </li>
