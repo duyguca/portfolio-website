@@ -54,11 +54,15 @@ export default function Project({
         <ul className=" cursor-pointer flex flex-col sm:flex-row items-start justify-start sm:items-end gap-5 pt-8 text-gray-700">
           {liveSite && (
             <li className="border-b-2 border-purple-400 hover:border-pink-600 hover:text-black hover:scale-105 hover:font-base hover:transition-all">
-              <Link href={liveSite}>Live Site</Link>
+              <Link href={liveSite} target="_blank">
+                Live Site
+              </Link>
             </li>
           )}
           <li className="border-b-2 border-purple-400 hover:border-pink-600 hover:text-black hover:scale-105 hover:font-base hover:transition-all">
-            <Link href={`https://github.com/duyguca/${slug}`}>GitHub</Link>
+            <Link href={`https://github.com/duyguca/${slug}`} target="_blank">
+              GitHub
+            </Link>
           </li>
           <li className="border-b-2 border-purple-400 hover:border-pink-600 hover:text-black hover:scale-105 hover:font-base hover:transition-all">
             <Link href={`/projects/${slug}`}> More Details&#8599;</Link>

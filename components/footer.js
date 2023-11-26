@@ -12,18 +12,21 @@ const Footer = () => {
           <Link
             className="hover:scale-110 hover:text-purple-400 transition "
             href="https://www.linkedin.com/in/duygukoksalca/"
+            target="_blank"
           >
             <PiLinkedinLogoLight className="text-3xl" />
           </Link>
           <Link
             className="hover:scale-110 hover:text-purple-400 transition"
             href="https://github.com/duyguca/"
+            target="_blank"
           >
             <PiGithubLogo className="text-3xl"></PiGithubLogo>
           </Link>
           <Link
             className="hover:scale-110 hover:text-purple-400 transition"
             href="mailto:duygukoksalca@gmail.com"
+            target="_blank"
           >
             <AiOutlineMail className="text-3xl"></AiOutlineMail>
           </Link>
