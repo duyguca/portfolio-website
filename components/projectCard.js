@@ -12,7 +12,7 @@ export default function Project({
   slug,
   liveSite,
 }) {
-  console.log({ title, description, tags, imageUrl, slug, liveSite });
+  // console.log({ title, description, tags, imageUrl, slug, liveSite });
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,

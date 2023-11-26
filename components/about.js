@@ -14,9 +14,6 @@ const About = () => {
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-
-  // console.log("duygu", { skillsData });
-
   return (
     <motion.section
       ref={ref}

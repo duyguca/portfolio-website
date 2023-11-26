@@ -1,7 +1,6 @@
 "use client";
 import ProjectCard from "./projectCard";
 import React, { useState } from "react";
-import Link from "next/link";
 import SectionHeading from "./sectionHeading";
 import { projectsData } from "@/lib/data";
 import TabButton from "./tabButton";
