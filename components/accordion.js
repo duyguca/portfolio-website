@@ -16,12 +16,14 @@ export default function MyAccordion({ currentData }) {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className="sm:text-xl font-bold">Development</Typography>
+          <Typography className="sm:text-xl font-medium">
+            Development
+          </Typography>
         </AccordionSummary>
         <AccordionDetails className="border-b border-pink-500 bg-pink-100">
           <Typography>
             {" "}
-            <div className="flex flex-col sm:flex-row text-sm sm:text-base justify-center items-center gap-5 p-4 ">
+            <div className="flex flex-col sm:flex-row text-sm sm:text-[14px] justify-center items-center gap-5 p-4 ">
               <Image
                 className="w-full"
                 src={currentData.accordionImage1}
@@ -29,7 +31,7 @@ export default function MyAccordion({ currentData }) {
                 height={400}
                 alt="accordionImage"
               />
-              <p className="sm:text-xl">{currentData.development}</p>
+              <p className="sm:text-md">{currentData.development}</p>
             </div>
           </Typography>
         </AccordionDetails>
@@ -40,7 +42,7 @@ export default function MyAccordion({ currentData }) {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className="sm:text-xl font-bold">Highlights</Typography>
+          <Typography className="sm:text-xl font-medium">Highlights</Typography>
         </AccordionSummary>
         <AccordionDetails className="border-b border-pink-500 bg-pink-100">
           <Typography>
@@ -52,7 +54,7 @@ export default function MyAccordion({ currentData }) {
                 height={200}
                 alt="accordionImage"
               />
-              <p className="sm:text-xl">{currentData.highlights}</p>
+              <p className="sm:text-md">{currentData.highlights}</p>
             </div>
           </Typography>
         </AccordionDetails>
@@ -63,7 +65,7 @@ export default function MyAccordion({ currentData }) {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className="bg-white sm:text-xl font-bold">
+          <Typography className="bg-white sm:text-xl font-medium">
             What i learned
           </Typography>
         </AccordionSummary>
@@ -75,7 +77,7 @@ export default function MyAccordion({ currentData }) {
                 language="jsx"
                 showLineNumbers={true}
               />
-              <p className="p-4 sm:text-xl">{currentData.whatILearned}</p>
+              <p className="p-4 sm:text-md">{currentData.whatILearned}</p>
             </div>
           </Typography>
         </AccordionDetails>

@@ -39,7 +39,7 @@ export default function Page({ params }) {
       </div>
       <div className="container max-w-[60rem] mx-auto text-gray-200 dark:text-gray-900 ">
         <Subheading>Project Overview</Subheading>
-        <p className="py-10 px-2 text-sm sm:text-xl font-light">
+        <p className="py-10 px-2 text-sm sm:text-base font-light">
           {currentData.overview}
         </p>
 
